@@ -28,20 +28,17 @@ public class ScreenShot {
 	}
 	
 	public void captureScreenShot(){
-		
-		// to be changed 
-		String path = "C:\\Users\\Naveen\\Desktop\\screenshots\\";
+		String path = "C:\\Tejas Training\\Screenshots\\";
 		String fileName ="";
 
 		GregorianCalendar calendar = new GregorianCalendar(); 
 		
 		int date =  calendar.get(Calendar.DATE); 
 		int minute = calendar.get(Calendar.MINUTE);
-		int second = calendar.get(Calendar.SECOND); 
-		
+		int second = calendar.get(Calendar.SECOND);
 		
 		fileName = new Integer(date).toString() + "-" + new Integer(minute).toString() +"-" +
-					new Integer(second).toString() +".png"; 
+				new Integer(second).toString() +".png"; 
 		
 		// 1. create file 
 		// 2. capture screenshot from selenium 
@@ -66,7 +63,7 @@ public class ScreenShot {
 
 	public void captureScreenShot(String fileName){
 		
-		String path =  "C:\\Users\\Naveen\\Desktop\\screenshots\\";
+		String path =  "C:\\Tejas Training\\Screenshots\\";
 	
 		// 1. create file 
 		// 2. capture screenshot from selenium 
